@@ -40,7 +40,7 @@ namespace ChessLogic
                 {
                     continue;
                 }
-                if(board.IsEmpty(to)|| board[to].Color == Color)
+                if(board.IsEmpty(to)|| board[to].Color != Color)
                 {
                     yield return to;
                 }
